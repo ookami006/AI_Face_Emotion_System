@@ -1,39 +1,188 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <title>AI Face Emotion System</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
-    <div class="container">
+
+```
+<div class="hero">
+    <div class="hero-content">
+
         <h1>AI Face Emotion System</h1>
-        <p>Face Detection, Face Recognition and Emotion Detection using OpenCV, MediaPipe and DeepFace</p>
 
-        <div class="card-box">
-            <div class="card">
-                <h2>Face Detection</h2>
-                <p>Detects face with bounding box, confidence and FPS.</p>
-                <a href="/run-detection">Start Detection</a>
-            </div>
+        <p>
+            Real-time Face Detection, Face Recognition and Facial Expression Detection
+        </p>
 
-            <div class="card">
-                <h2>Face Recognition</h2>
-                <p>Recognizes registered persons using dataset matching.</p>
-                <a href="/run-recognition">Start Recognition</a>
-            </div>
-
-            <div class="card">
-                <h2>Emotion Detection</h2>
-                <p>Detects facial expression such as happy, neutral and surprise.</p>
-                <a href="/run-emotion">Start Emotion</a>
-            </div>
-
-            <div class="card highlight">
-                <h2>Combined System</h2>
-                <p>Shows name, emotion and FPS in one real-time window.</p>
-                <a href="/run-combined">Start Combined</a>
-            </div>
+        <div class="powered">
+            Powered by <span>OpenCV</span> • <span>MediaPipe</span> • <span>DeepFace</span> • <span>TensorFlow</span> • <span>Flask</span>
         </div>
+
+        <div class="hero-team">
+            <strong>Developed By:</strong>
+            Mahak Gupta & Saawariya Chandra Porwal
+        </div>
+
     </div>
+</div>
+<div class="container">
+
+    <h2 class="section-title">Project Modules</h2>
+
+    <div class="card-box">
+
+        <div class="card">
+            <h2>Face Detection</h2>
+
+            <p>
+                Detects human faces with bounding box,
+                confidence score and FPS.
+            </p>
+
+            <a href="/run-detection">
+                Start Detection
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>Face Recognition</h2>
+
+            <p>
+                Recognizes registered users using
+                DeepFace and dataset matching.
+            </p>
+
+            <a href="/run-recognition">
+                Start Recognition
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>Emotion Detection</h2>
+
+            <p>
+                Detects facial expressions such as
+                happy, neutral and surprise.
+            </p>
+
+            <a href="/run-emotion">
+                Start Emotion
+            </a>
+        </div>
+
+        <div class="card highlight">
+            <h2>Combined System</h2>
+
+            <p>
+                Displays face recognition,
+                emotion detection and FPS
+                in one real-time window.
+            </p>
+
+            <a href="/run-combined">
+                Start Combined
+            </a>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">System Architecture</h2>
+
+    <div class="architecture">
+
+        <div>Webcam Input</div>
+
+        <span>➜</span>
+
+        <div>Face Detection</div>
+
+        <span>➜</span>
+
+        <div>Face Recognition</div>
+
+        <span>➜</span>
+
+        <div>Emotion Analysis</div>
+
+        <span>➜</span>
+
+        <div>Output Display</div>
+
+    </div>
+
+    <h2 class="section-title">Technology Stack</h2>
+
+    <div class="tech-box">
+
+        <div>Python</div>
+
+        <div>OpenCV</div>
+
+        <div>MediaPipe</div>
+
+        <div>DeepFace</div>
+
+        <div>TensorFlow</div>
+
+        <div>Flask</div>
+
+    </div>
+
+    <h2 class="section-title">Project Team</h2>
+
+    <div class="team-box">
+
+        <div class="team-member">
+
+            <h3>Mahak Gupta</h3>
+
+            <p>
+                Face Recognition Module<br>
+                Emotion Detection Module<br>
+                Frontend Integration
+            </p>
+
+        </div>
+
+        <div class="team-member">
+
+            <h3>Saawariya Chandra Porwal</h3>
+
+            <p>
+                Face Detection Module<br>
+                System Development<br>
+                Dataset Management<br>
+                Project Integration
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="info-panel">
+
+        <h2>Project Overview</h2>
+
+        <p>
+            This project captures real-time webcam input,
+            detects faces using MediaPipe,
+            recognizes registered users using DeepFace,
+            and predicts facial expressions using
+            a pre-trained emotion analysis model.
+        </p>
+
+    </div>
+
+    <footer>
+        MCA Project | Face Recognition & Facial Expression Detection
+    </footer>
+
+</div>
+```
+
 </body>
 </html>

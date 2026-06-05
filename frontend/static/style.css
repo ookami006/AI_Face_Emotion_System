@@ -1,65 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(120deg, #111827, #1f2937);
+    background: #0f172a;
     color: white;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
+/* HERO SECTION */
+.hero {
+    min-height: 260px;
+    padding: 28px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding-top: 40px;
+    background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.22), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.18), transparent 35%),
+        linear-gradient(135deg, #0f172a, #1e3a8a, #0f172a);
 }
 
-h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 10px;
+    color: #38bdf8;
 }
 
-p {
+.hero p {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #e5e7eb;
+}
+
+.powered {
+    margin-top: 10px;
+    font-size: 16px;
     color: #d1d5db;
+    font-weight: bold;
 }
 
+.powered span {
+    color: #22c55e;
+}
+
+.hero-team {
+    margin-top: 16px;
+    display: inline-block;
+    padding: 11px 22px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.45);
+    box-shadow: 0 0 16px rgba(56, 189, 248, 0.18);
+    color: white;
+    font-size: 17px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 92%;
+    margin: auto;
+    padding: 18px 0 30px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 12px 0 18px;
+    color: #38bdf8;
+    font-size: 28px;
+}
+
+/* MODULE CARDS */
 .card-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 18px;
-    margin-top: 40px;
 }
 
 .card {
-    background: #374151;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.35);
+    transition: 0.3s;
+    min-height: 230px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #334155;
 }
 
 .card h2 {
     color: #38bdf8;
+    margin-top: 0;
+}
+
+.card p {
+    color: #cbd5e1;
+    min-height: 70px;
+    line-height: 1.35;
 }
 
 .highlight {
     border: 2px solid #22c55e;
 }
 
-.commands {
-    margin-top: 40px;
-    background: #111827;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: left;
-}
-
-.commands h3 {
-    text-align: center;
-    color: #22c55e;
-}
-
 .card a {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 18px;
+    margin-top: 10px;
+    padding: 11px 18px;
     background: #22c55e;
     color: white;
     text-decoration: none;
@@ -69,4 +121,178 @@ p {
 
 .card a:hover {
     background: #16a34a;
+}
+
+/* ARCHITECTURE */
+.architecture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.architecture div {
+    background: #1e293b;
+    padding: 13px 18px;
+    border-radius: 12px;
+    border: 1px solid #38bdf8;
+}
+
+.architecture span {
+    font-size: 22px;
+    color: #22c55e;
+}
+
+/* TECHNOLOGY STACK */
+.tech-box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.tech-box div {
+    background: #020617;
+    border: 1px solid #334155;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    color: #e5e7eb;
+    font-weight: bold;
+}
+
+/* TEAM SECTION */
+.team-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.team-member {
+    width: 320px;
+    background: #1e293b;
+    border: 1px solid #38bdf8;
+    border-radius: 15px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.team-member h3 {
+    color: #22c55e;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+/* OVERVIEW */
+.info-panel {
+    margin-top: 35px;
+    background: #1e293b;
+    padding: 22px;
+    border-radius: 16px;
+    border-left: 5px solid #22c55e;
+}
+
+.info-panel h2 {
+    color: #38bdf8;
+}
+
+.info-panel p {
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 25px;
+    padding: 18px;
+    color: #94a3b8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .card-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tech-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .card-box {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+////
+/* ---------- FINAL HERO POLISH ---------- */
+
+.hero {
+    min-height: 500px !important;
+    padding: 60px 20px !important;
+}
+
+.hero h1 {
+    font-size: 52px !important;
+    margin-bottom: 16px !important;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 22px !important;
+    margin: 12px 0 !important;
+    color: #e2e8f0 !important;
+}
+
+.powered {
+    margin-top: 16px !important;
+    font-size: 17px !important;
+}
+
+.hero-team {
+    margin-top: 50px !important;
+    padding: 16px 34px !important;
+    font-size: 20px !important;
+    border-radius: 18px !important;
+
+    background: linear-gradient(
+        135deg,
+        rgba(56, 189, 248, 0.22),
+        rgba(34, 197, 94, 0.16)
+    ) !important;
+
+    border: 1px solid rgba(56, 189, 248, 0.75) !important;
+    box-shadow:
+        0 0 20px rgba(56, 189, 248, 0.35),
+        inset 0 0 18px rgba(255,255,255,0.06) !important;
+
+    backdrop-filter: blur(12px);
+}
+
+.hero-team strong {
+    color: #22c55e;
+    margin-right: 8px;
 }
