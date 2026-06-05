@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Face Emotion System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Face Emotion System</h1>
+        <p>Face Detection, Face Recognition and Emotion Detection using OpenCV, MediaPipe and DeepFace</p>
+
+        <div class="card-box">
+            <div class="card">
+                <h2>Face Detection</h2>
+                <p>Detects face with bounding box, confidence and FPS.</p>
+                <a href="/run-detection">Start Detection</a>
+            </div>
+
+            <div class="card">
+                <h2>Face Recognition</h2>
+                <p>Recognizes registered persons using dataset matching.</p>
+                <a href="/run-recognition">Start Recognition</a>
+            </div>
+
+            <div class="card">
+                <h2>Emotion Detection</h2>
+                <p>Detects facial expression such as happy, neutral and surprise.</p>
+                <a href="/run-emotion">Start Emotion</a>
+            </div>
+
+            <div class="card highlight">
+                <h2>Combined System</h2>
+                <p>Shows name, emotion and FPS in one real-time window.</p>
+                <a href="/run-combined">Start Combined</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
