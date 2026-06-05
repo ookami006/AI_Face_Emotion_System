@@ -13,9 +13,6 @@ cryptography==48.0.0
 cycler==0.12.1
 deepface==0.0.100
 filelock==3.29.0
-contourpy==1.3.3
-cycler==0.12.1
-deepface==0.0.100
 fire==0.7.1
 Flask==3.1.3
 flask-cors==6.0.2
@@ -34,12 +31,6 @@ itsdangerous==2.2.0
 Jinja2==3.1.6
 joblib==1.5.3
 keras==2.15.0
-google-pasta==0.2.0
-gunicorn==26.0.0
-h5py==3.14.0
-itsdangerous==2.2.0
-Jinja2==3.1.6
-joblib==1.5.3
 kiwisolver==1.5.0
 libclang==18.1.1
 lightdsa==0.0.3
@@ -58,9 +49,6 @@ mtcnn==1.0.0
 namex==0.1.0
 numpy==1.26.4
 oauthlib==3.3.1
-mpmath==1.3.0
-mtcnn==1.0.0
-namex==0.1.0
 opencv-contrib-python==4.13.0.92
 opencv-python==4.13.0.92
 opt_einsum==3.4.0
@@ -82,7 +70,6 @@ requests-oauthlib==2.0.0
 retina-face==0.0.17
 rich==15.0.0
 scikit-learn==1.8.0
-rich==15.0.0
 scipy==1.17.1
 six==1.17.0
 sounddevice==0.5.5
@@ -102,9 +89,3 @@ tzdata==2026.2
 urllib3==2.7.0
 Werkzeug==3.1.8
 wrapt==1.14.2
-termcolor==3.3.0
-tqdm==4.67.3
-typing_extensions==4.15.0
-urllib3==2.7.0
-Werkzeug==3.1.8
-
