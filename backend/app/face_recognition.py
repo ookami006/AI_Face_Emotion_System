@@ -25,6 +25,9 @@ prev_time = 0
 
 # Last recognized person
 current_name = "Unknown"
+current_confidence = 0
+last_recognition_time = 0
+recognition_interval = 3
 
 print("Face Recognition Started...")
 print("Press Q to Quit")
@@ -82,7 +85,7 @@ while True:
             # -----------------------------
             # RECOGNITION EVERY 10 FRAMES
             # -----------------------------
-            if frame_count % 10 == 0 and face_img.size != 0:
+            if time.time() - last_recognition_time > recognition_interval and face_img.size != 0:
 
                 try:
 
@@ -98,6 +101,7 @@ while True:
                     if len(result) > 0 and len(result[0]) > 0:
 
                         matched_path = result[0].identity.iloc[0]
+                        last_recognition_time = time.time()
 
                         current_name = os.path.basename(
                             os.path.dirname(matched_path)
